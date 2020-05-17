@@ -39,7 +39,5 @@ COPY custom-php.ini.tpl /opt/etc/custom-php.ini.tpl
 # Copy scripts
 COPY init.sh /usr/local/bin/init.sh
 
-VOLUME /var/www/
-
 # Run supervisor
 ENTRYPOINT ["/bin/sh", "/usr/local/bin/init.sh"]
