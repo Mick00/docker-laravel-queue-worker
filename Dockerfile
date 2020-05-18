@@ -25,6 +25,8 @@ RUN chmod +x /usr/local/bin/confd \
 	&& apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community gnu-libiconv \
 	&& docker-php-ext-enable bcmath pdo pdo_mysql pdo_sqlite mbstring json xml zip curl gmp intl gd imagick soap amqp sockets
 
+RUN adduser -D -H worker
+
 # Install pdo if you want to use database queue and install supervisor
 RUN apk add --update supervisor && rm -rf /tmp/* /var/cache/apk/*
 

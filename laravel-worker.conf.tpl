@@ -14,3 +14,4 @@ startretries=10
 stdout_events_enabled=1
 redirect_stderr=true
 stdout_logfile=/var/www/storage/logs/worker.log
+user=worker

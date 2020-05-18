@@ -11,3 +11,4 @@ autostart=true
 autorestart=true
 stdout_events_enabled=1
 redirect_stderr=true
+user=worker
